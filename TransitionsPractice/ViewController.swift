@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func switchScreenToUpdated(sender: UIButton)
     {
-        performSegueWithIdentifier("toUpdated", sender:sender)
+        performSegueWithIdentifier("toUpdatedFromMain", sender:sender)
     }
 
 }
