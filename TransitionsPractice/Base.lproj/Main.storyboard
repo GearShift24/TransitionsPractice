@@ -60,9 +60,34 @@
                                     <rect key="frame" x="80" y="83" width="240" height="128"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSn-PE-tcW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="259" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ButtonName:" destination="OvE-5h-TXP" eventType="touchDown" id="DtU-Sb-0xx"/>
+                                    <action selector="OBJECTNAME:" destination="OvE-5h-TXP" eventType="touchUpInside" id="zu1-lc-Rp3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sSn-PE-tcW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sSn-PE-tcW"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="viF-nQ-hmK" id="4kN-iH-Eia"/>
+                        <outlet property="topImage" destination="vOo-5h-EIN" id="gIE-cp-3xd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFr-9n-pdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
